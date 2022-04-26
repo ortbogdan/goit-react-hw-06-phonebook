@@ -1,5 +1,11 @@
-function App() {
-  return <div className="App"></div>;
-}
+import { ContactForm, ContactList, Filter } from "./components";
 
-export default App;
+export const App = () => {
+  return (
+    <div>
+      <ContactForm />
+      <Filter />
+      <ContactList />
+    </div>
+  );
+};
