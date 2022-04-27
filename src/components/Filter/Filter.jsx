@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeFilter } from "../../redux/actions";
 
 export const Filter = () => {
-  const filter = useSelector((state) => state.filter);
+  const filter = useSelector((state) => state.contacts.filter);
   const dispatch = useDispatch();
   return (
     <FilterWrapper>

@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Form = styled.form`
   display: flex;
+  margin-bottom: 10px;
   flex-direction: column;
   align-items: center;
   > label {

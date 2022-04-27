@@ -9,7 +9,7 @@ export const ContactForm = () => {
   const dispatch = useDispatch();
   const handleSubmit = (event) => {
     event.preventDefault();
-    dispatch(addContact({ id: idGenerator(), name: name, number: number }));
+    dispatch(addContact({ id: idGenerator(), name, number }));
     reset();
   };
   const reset = () => {

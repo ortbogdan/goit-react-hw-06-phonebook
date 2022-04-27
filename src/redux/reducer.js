@@ -2,7 +2,6 @@ import { addContact, deleteContact, changeFilter } from "./actions";
 import { setItemToStorage, getItemsForStorage } from "../services/localStorage";
 import { createReducer } from "@reduxjs/toolkit";
 
-// import { combineReducers } from "@reduxjs/toolkit";
 const savedContacts = getItemsForStorage();
 export const itemsReducer = createReducer(savedContacts, {
   [addContact]: (state, { payload }) => {
@@ -21,5 +20,5 @@ export const itemsReducer = createReducer(savedContacts, {
     state.filter((contact) => contact.id !== payload),
 });
 export const filterReducer = createReducer("", {
-  [changeFilter]: (state, { payload }) => payload.query,
+  [changeFilter]: (state, { payload }) => payload,
 });
